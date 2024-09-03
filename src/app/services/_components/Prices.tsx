@@ -10,25 +10,25 @@ function Prices() {
   return (
     <section className='max-w-screen-lg mx-auto my-16 px-4 lg:px-0'>
         <SectionTitle>Mes offres</SectionTitle>
-        <p className='text-sm text-center'>Trouvez la formule qui correspond le plus à votre besoin. Si vous avez un doute ou une demande particulière, n'hésitez pas à <a className='underline' href='/contact'>me contacter</a></p>
+        <p className='text-sm text-center dark:text-white'>Trouvez la formule qui correspond le plus à votre besoin. Si vous avez un doute ou une demande particulière, n'hésitez pas à <a className='underline' href='/contact'>me contacter</a></p>
         <div className=' grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-8'>
             {allPrices.map((offer, index) => (
-            <div className='shadow-md p-8 rounded-xl' key={index}>
+            <div className='shadow-md p-8 rounded-xl dark:shadow-secondary' key={index}>
                 <div>
-                    <h3 className='font-bold text-xl'>{offer.title}</h3>
+                    <h3 className='font-bold text-xl dark:text-white'>{offer.title}</h3>
                     <p className='text-gray-400 text-sm'>{offer.description}</p>
                 </div>
                 
-                <p className='text-2xl font-bold my-8'>{offer.price}€ <span className='text-gray-600 text-base'></span></p>
-                <ul className='list-disc flex flex-col gap-2'>
+                <p className='text-2xl font-bold my-8 dark:text-white'>{offer.price}€ <span className='text-gray-600 text-base'></span></p>
+                <ul className='list-disc flex flex-col gap-2 dark:text-white'>
                         {offer.includes.map((include, index) => (
                         <li key={index} className='flex items-center gap-4'><Check className='w-5'></Check>{include}</li>
                         ))}
                         {offer.plus.map((plus, index) => (
-                        <li key={index} className='flex items-center gap-4'><Plus className='w-3 mx-1'></Plus>{plus}</li>
+                        <li key={index} className='flex items-center gap-4'><Plus className='w-3 mx-1 dark:fill-white'></Plus>{plus}</li>
                         ))}
                 </ul>
-                <ClassicButton type='link' variant='primary' to='/contact' className='mx-auto mt-8'>Commencer</ClassicButton>
+                <ClassicButton type='link' variant='primary' to='/contact' className='mx-auto mt-8 dark:hover:text-white'>Commencer</ClassicButton>
             </div>
             ))}
                 

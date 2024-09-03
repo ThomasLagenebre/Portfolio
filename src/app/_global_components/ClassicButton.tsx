@@ -9,7 +9,7 @@ export function ClassicButton({children, className, to, type, onClick, variant }
                 to?:string | undefined
                 type: "link" | "button"
                 onClick?: () => void
-                variant: string
+                variant?: string
               }
             ) 
   { 

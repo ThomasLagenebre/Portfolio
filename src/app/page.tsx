@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <HeaderSpacer />
       <Hero />
-      <CustomersSliderBar />
+      {/* <CustomersSliderBar /> */}
       <Services />
       <News />
       <Reviews />
