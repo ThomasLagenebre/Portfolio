@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <header>
-            <nav className={` bg-white dark:bg-primary fixed top-0 w-full z-50 pb-6`}>
+            <nav className={` bg-gray-50 dark:bg-primary fixed top-0 w-full z-50 pb-6`}>
         <div className="max-w-screen-lg lg:flex items-center mx-auto justify-between">
             <div className='lg:flex lg:items-center gap-20'>
                 <div className="flex md:hidden space-x-3 md:space-x-0 rtl:space-x-reverse ms-8 fixed top-4 right-4">

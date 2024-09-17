@@ -2,12 +2,12 @@ import React from 'react'
 
 function Competences() {
   return (
-    <div>
-        <h2 className='font-bold text-2xl text-secondary mb-6'>Front-end</h2>
+    <div className='px-4 mt-6'>
+        <h2 className='font-bold text-lg text-center md:text-left md:text-2xl text-secondary mb-6'>Front-end</h2>
         <ul className='sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-6'>
             {StackData.front.map((techno, idx) => 
                 <li key={idx} className='flex items-center divide-x divide-secondary max-sm:my-3'>
-                    <img src={techno.img} alt={`Logo ${techno.name}`} className='w-16 pe-4 object-fit' />
+                    <img src={techno.img} alt={`Logo ${techno.name}`} className='w-12 md:w-16 pe-4 object-fit' />
                     <div>
                         <h3 className='ps-4 min-[300px]:text-xl font-bold dark:text-light'>{techno.name}</h3>
                         <p className='ps-4 font-extralight dark:text-light'>{techno.level}</p>
@@ -15,11 +15,11 @@ function Competences() {
                 </li>
             )}
         </ul>
-        <h2 className='font-bold text-2xl text-secondary mb-6'>Back-end</h2>
+        <h2 className='font-bold text-lg text-center md:text-left md:text-2xl text-secondary mb-6'>Back-end</h2>
         <ul className='sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-6'>
             {StackData.back.map((techno, idx) => 
                 <li key={idx} className='flex items-center divide-x divide-secondary max-sm:my-3'>
-                    <img src={techno.img} alt={`Logo ${techno.name}`} className='w-16 pe-4 object-fit' />
+                    <img src={techno.img} alt={`Logo ${techno.name}`} className='w-12 md:w-16 pe-4 object-fit' />
                     <div>
                         <h3 className='ps-4 text-xl font-bold dark:text-light'>{techno.name}</h3>
                         <p className='ps-4 font-extralight dark:text-light'>{techno.level}</p>
@@ -27,11 +27,11 @@ function Competences() {
                 </li>
             )}
         </ul>
-        <h2 className='font-bold text-2xl text-secondary mb-6'>Autres</h2>
+        <h2 className='font-bold text-lg text-center md:text-left md:text-2xl text-secondary mb-6'>Autres</h2>
         <ul className='sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-6'>
             {StackData.others.map((techno, idx) => 
                 <li key={idx} className='flex items-center divide-x divide-secondary max-sm:my-3'>
-                    <img src={techno.img} alt={`Logo ${techno.name}`} className='w-16 pe-4 object-fit' />
+                    <img src={techno.img} alt={`Logo ${techno.name}`} className='w-12 md:w-16 pe-4 object-fit' />
                     <div>
                         <h3 className='ps-4 text-xl font-bold dark:text-light'>{techno.name}</h3>
                         <p className='ps-4 font-extralight dark:text-light'>{techno.level}</p>

@@ -4,7 +4,7 @@ import { MacbookScroll } from "@/app/_components/ui/macbook-scroll";
 
 export function MacbookScrollDemo({src} : {src:string}) {
   return (
-    <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
+    <div className="overflow-hidden dark:bg-[#0B0B0F] bg-gray-50 w-full">
       <MacbookScroll
         src={src}
         showGradient={false}

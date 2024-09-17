@@ -60,7 +60,7 @@ const Xp = [
   },
   {
     name: 'Développeur web fullstack',
-    jobcompany: 'Freelance - DevByToma',
+    jobcompany: 'Freelance - MonsieurWeb',
     date: 'Depuis Fev. 2024',
     list: [
       'Création de solution digitale sur-mesure (site vitrine, e-commerce, intranet, ...)',

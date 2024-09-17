@@ -1,11 +1,11 @@
 import React from 'react'
 
-function ProjectCard() {
+function ProjectCard({title, img, link}: {title: string, img: string, link: string}) {
   return (
-    <div className=' shadow-md rounded-lg dark:shadow-white py-2'>
-        <h3 className='text-center font-bold dark:text-white'>Boostacarriere</h3>
-        <img className='my-4' src='https://f.hellowork.com/blogdumoderateur/2019/10/capture.jpg'></img>
-        <a href='/projets/boo' className='text-xs block mx-auto w-fit my-4 dark:text-white'>Voir plus ➔</a>
+    <div className='bg-white shadow-md rounded-lg dark:shadow-white py-4'>
+        <h3 className='text-center font-bold px-2'>{title}</h3>
+        <img className='my-4' src={img}></img>
+        <a href={link} className='text-xs block mx-auto w-fit my-4 dark:text-white'>Voir plus ➔</a>
     </div>
   )
 }

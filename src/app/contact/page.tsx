@@ -1,6 +1,6 @@
 'use client';
-import { PlaceholdersAndVanishInput } from "../_components/ui/placeholders-and-vanish-input";
 import EspaceurHeader from "../_global_components/HeaderSpacer"
+import { myInfos } from '@data/global/PersonalInformation'
 
 export default function Contact() {
   const placeholders = [
@@ -19,11 +19,11 @@ export default function Contact() {
         <form className="md:w-1/2 m-auto my-10">
             <div className="mb-6">
                 <label htmlFor="name" className="block mb-2 text-sm font-medium text-light dark:text-dark">Ton nom complet</label>
-                <input type="text" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Thomas Lagenebre" required />
+                <input type="text" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder={myInfos.prenom + " " + myInfos.nom} required />
             </div> 
             <div className="mb-6">
                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-light dark:text-dark">Ton email</label>
-                <input type="text" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="devbytoma@gmail.com" required />
+                <input type="text" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder={myInfos.mail} required />
             </div> 
             <div className="mb-6">
                 <label htmlFor="subject" className="block mb-2 text-sm font-medium text-light dark:text-dark">L'objet de ta demande</label>

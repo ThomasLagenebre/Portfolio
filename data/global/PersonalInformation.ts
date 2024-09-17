@@ -1,7 +1,11 @@
 export const myInfos : { 
     mail: string
     pseudo: string
+    nom: string
+    prenom: string
 } = {
-    mail: "devbytoma@gmail.com",
-    pseudo: "Monsieur Web"
+    mail: "thomas@monsieurweb.dev",
+    pseudo: "Monsieur Web",
+    nom: "Lagenebre",
+    prenom: "Thomas"
 }

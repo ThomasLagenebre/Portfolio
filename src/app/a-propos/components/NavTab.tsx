@@ -28,13 +28,11 @@ function NavTab() {
     <div className='my-10'>
         <nav className='md:m-auto md:w-3/4'>
             <ul className='md:flex md:items-center'>
-                <li onClick={() => whatShow === 'competences' ? setWhatShow('') : setWhatShow('competences')} className={`${whatShow === 'competences' ? 'border-x-2 border-t-2 bg-secondary font-bold w-full' : 'border-b-2 dark:text-light'} hover:bg-secondary hover:text-dark md:w-1/4 md:text-xs lg:text-sm xl:text-base border-secondary  md:rounded-t-md py-2 text-center  cursor-pointer`}>Compétences techniques</li>
+                <li onClick={() => whatShow === 'competences' ? setWhatShow('') : setWhatShow('competences')} className={`${whatShow === 'competences' ? 'border-x-2 border-t-2 bg-secondary font-bold w-full' : 'border-b-2 dark:text-light'} hover:bg-secondary hover:text-dark md:w-1/3 md:text-xs lg:text-sm xl:text-base border-secondary  md:rounded-t-md py-2 text-center  cursor-pointer`}>Compétences techniques</li>
                 {whatShow === 'competences' && isMobile && renderContent()}
-                <li onClick={() => whatShow === 'experiences' ? setWhatShow('') : setWhatShow('experiences')} className={`${whatShow === 'experiences' ? 'border-x-2 border-t-2 bg-secondary font-bold' : 'border-b-2 dark:text-light'} hover:bg-secondary hover:text-dark md:w-1/4 md:text-xs lg:text-sm xl:text-base border-secondary  md:rounded-t-md py-2 text-center  cursor-pointer`}>Expériences professionnelles</li>
+                <li onClick={() => whatShow === 'experiences' ? setWhatShow('') : setWhatShow('experiences')} className={`${whatShow === 'experiences' ? 'border-x-2 border-t-2 bg-secondary font-bold' : 'border-b-2 dark:text-light'} hover:bg-secondary hover:text-dark md:w-1/3 md:text-xs lg:text-sm xl:text-base border-secondary  md:rounded-t-md py-2 text-center  cursor-pointer`}>Expériences professionnelles</li>
                 {whatShow === 'experiences' && isMobile && renderContent()}
-                <li onClick={() => whatShow === 'savoir' ? setWhatShow('') : setWhatShow('savoir')} className={`${whatShow === 'savoir' ? 'border-x-2 border-t-2 bg-secondary font-bold' : 'border-b-2 dark:text-light'} hover:bg-secondary hover:text-dark md:w-1/4 md:text-xs lg:text-sm xl:text-base border-secondary  md:rounded-t-md py-2 text-center  cursor-pointer`}>Savoir-être</li>
-                {whatShow === 'savoir' && isMobile && renderContent()}
-                <li onClick={() => whatShow === 'formations' ? setWhatShow('') : setWhatShow('formations')} className={`${whatShow === 'formations' ? 'border-x-2 border-t-2 bg-secondary font-bold' : 'border-b-2 dark:text-light'} hover:bg-secondary hover:text-dark md:text-xs md:w-1/4 lg:text-sm xl:text-base border-secondary  md:rounded-t-md py-2 text-center  cursor-pointer`}>Formations</li>
+                <li onClick={() => whatShow === 'formations' ? setWhatShow('') : setWhatShow('formations')} className={`${whatShow === 'formations' ? 'border-x-2 border-t-2 bg-secondary font-bold' : 'border-b-2 dark:text-light'} hover:bg-secondary hover:text-dark md:text-xs md:w-1/3 lg:text-sm xl:text-base border-secondary  md:rounded-t-md py-2 text-center  cursor-pointer`}>Formations</li>
                 {whatShow === 'formations' && isMobile && renderContent()}
             </ul>
         </nav>

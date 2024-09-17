@@ -21,6 +21,7 @@ export default function Reviews() {
 
   const tabletReviews = allReviews.slice(0,4);
   const mobileReviews = allReviews.slice(0,2);
+  const desktopReviews = allReviews.slice(0,8);
 
   useEffect(() => {
     const handleResize = () => {
@@ -49,7 +50,7 @@ export default function Reviews() {
                 <ReviewsCard key={idx} review={review} />
               ))
             ) : (
-              allReviews.map((review, idx) => (
+              desktopReviews.map((review, idx) => (
                 <ReviewsCard key={idx} review={review} />
               ))
             )}
